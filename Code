@@ -1,0 +1,23 @@
+import pygame
+#number = input("Enter your guess ")
+from random import randrange
+x = (randrange(100))
+val = 200
+y = 1
+#val = int(number)
+
+
+
+
+while val != x:
+    val = int(input("Enter a number"))
+    if x > val:
+        print("too low keep trying")
+        y += 1
+       
+    if x < val:
+        print("too high keep trying")
+        y += 1
+   
+print("Correct")        
+print ("It took you ",y," tries.")
